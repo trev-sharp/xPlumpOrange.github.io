@@ -54,7 +54,7 @@ div#experience-table {
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
-    background: linear-gradient(rgb(25, 25, 34), rgb(19, 19, 25));
+    background: linear-gradient(rgb(25, 34, 34), rgb(19, 19, 25));
     border-radius: 10px;
     border: 5px solid white;
     transition-duration: 600ms;
@@ -69,7 +69,7 @@ div.featured-project, div.past-work-part  {
     margin: 10px;
     flex: 30%;
     width: 100%;
-    background: linear-gradient(rgb(25, 25, 34), rgb(19, 19, 25));
+    background: linear-gradient(rgb(25, 34, 34), rgb(19, 19, 25));
     border-radius: 10px;
     border: 5px solid white;
     overflow: hidden;
@@ -99,12 +99,14 @@ div.featured-project p {
 }
 
 div.featured-project:hover, div.experience-part:hover {
-    flex: 40%;
+    padding-left: 60px;
+    padding-right: 60px;
     opacity: 1.0;
 }
 
 div.past-work-part:hover {
-    flex: 40%;
+    padding-left: 60px;
+    padding-right: 60px;
     opacity: 1.0;
 }
 
@@ -178,7 +180,7 @@ img#menu-button:hover {
 }
 
 body {
-    background:linear-gradient(rgb(9, 9, 15), rgb(15, 15, 24));
+    background:linear-gradient(rgb(9, 9, 15), rgb(10, 15, 15));
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
     color: white;
