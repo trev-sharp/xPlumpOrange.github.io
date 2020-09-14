@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>sAbility</title>
+        <link rel="stylesheet" href="https://xPlumpOrange.github.io/resources/main.css">
+    </head>
+
+    <body>
+        <div id="everything">
+            <div id="main" onscroll="updateBackground()">
+                <div id="title">
+                    <h1 id="title-text">sAbility</h1>
+                    <p>Fully customizable ability plugin, with give gui.</p>
+                </div>
+                <div id="content">
+                    <div id="photos">
+                        <h2>Photos</h2>
+                        <div id="featured-table" class="section">
+                            <div class="featured-project">
+                                <img class="photo" src="https://i.imgur.com/3PGusPV.png">
+                            </div>
+                            <div class="featured-project">
+                                <img class="photo" src="https://i.imgur.com/1kCxoYa.png">
+                            </div>
+                            <div class="featured-project">
+                                <img class="photo" src="https://i.imgur.com/JLT6dXT.png">
+                            </div>
+                        </div>
+                        <div id="featured-table" class="section">
+                            <div class="featured-project">
+                                <img class="photo" src="https://i.imgur.com/teLGGFL.png">
+                            </div>
+                            <div class="featured-project">
+                                <img class="photo" src="https://i.imgur.com/HJO55eJ.png">
+                            </div>
+                            <div class="featured-project">
+                                <img class="photo" src="https://i.imgur.com/lI4Iio2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="downloads">
+                        <h2>Downloads</h2>
+                        <div id="featured-table" class="section">
+                            <div class="featured-project">
+                                <a href="" target="_blank">
+                                    <h3>Not Available</h3>
+                                </a>
+                                <br>
+                                <p>Unreleased plugin.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p> PlumpOrange &copy; 2020</p>
+                <div id="social">
+                    <a href="https://discord.gg/9NAQxTm" target="_blank"><img src="https://xPlumpOrange.github.io/resources/logo-discord.png"></a>
+                    <a href="https://github.com/xPlumpOrange" target="_blank"><img src="https://xPlumpOrange.github.io/resources/logo-github.png"></a>
+                    <a href="https://twitter.com/plump_orange" target="_blank"><img src="https://xPlumpOrange.github.io/resources/logo-twitter.png"></a>
+                </div>
+            </div> 
+            <div id="menu">
+                <h1>Menu</h1>
+                <a href="https://xPlumpOrange.github.io">
+                    <p onclick="toggleMenu()">Home</p>
+                </a>
+                <a href="#photos">
+                    <p onclick="toggleMenu()">Photos</p>
+                </a>
+                <a href="#downloads">
+                    <p onclick="toggleMenu()">Download</p>
+                </a>
+            </div>
+            <div>
+                <img id="menu-button" src="https://xPlumpOrange.github.io/resources/button.png" onclick="toggleMenu()">
+            </div>
+        </div>
+    </body>
+    <script>
+        offset = 0.0;
+    goUp = true;
+        function getCssValuePrefix() {
+        var rtrnVal = ''; //default to standard syntax
+        var prefixes = ['-o-', '-ms-', '-moz-', '-webkit-'];
+
+        // Create a temporary DOM object for testing
+        var dom = document.createElement('div');
+
+        for (var i = 0; i < prefixes.length; i++) {
+            // Attempt to set the style
+            dom.style.background = prefixes[i] + 'linear-gradient(#000000, #ffffff)';
+
+            // Detect if the style was successfully set
+            if (dom.style.background) {
+                rtrnVal = prefixes[i];
+            }
+        }
+
+        dom = null;
+        delete dom;
+
+        return rtrnVal;
+        }
+
+        function toggleMenu() {
+        if (document.getElementById('menu').style.opacity == 0.0) {
+            document.getElementById('menu').style.opacity = 1.0;
+            document.getElementById('menu').style.width = '200px';
+            document.getElementById('menu').style.height = '300px';
+            document.getElementById('menu').style.right = '30px';
+        } else {
+            document.getElementById('menu').style.opacity = 0.0;
+            document.getElementById('menu').style.width = '190px';
+            document.getElementById('menu').style.height = '270px';
+            document.getElementById('menu').style.right = '-200px';
+        }
+    }
+
+    function showTitle() {
+        document.getElementById("content").style.opacity = "1.0";
+        document.getElementById("title").style.top = "0px";
+        document.getElementById("title").style.opacity = "1.0";
+        document.getElementById("title").getElementsByTagName('p').item(0).style.opacity = "0.75";
+        document.getElementById("title").getElementsByTagName('p').item(0).style.top = "0px";
+    }
+
+    function updateBackground() {
+        document.body.style.backgroundImage = getCssValuePrefix() +
+            `linear-gradient(rgb(${offset+9.0}, ${offset+9.0}, ${offset+15.0}), rgb(${offset+10.0}, ${offset+15.0}, ${offset+15.0}))`;
+        offset = window.pageYOffset / 100;
+    }
+
+    function setScroll() {
+        window.scrollTo(0, 0);
+    }
+
+    document.onscroll = updateBackground;
+    setScroll();
+    setTimeout(showTitle, 500);
+
+    </script>
+</html>
