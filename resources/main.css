@@ -1,11 +1,11 @@
 img.photo {
     margin-left:auto;
     maring-right:auto;
-    margin-top:50%;
-    margin-bottom:-25%;
+    margin-top:10%;
+    margin-bottom:10%;
     border-radius:10px;
     width:100%;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -0%);
 }
 
 div#main {
