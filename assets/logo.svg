@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.3 841.9"
+	 style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FBB040;stroke:#FBB040;stroke-miterlimit:10;}
+	.st1{fill:#F7941D;stroke:#F7941D;stroke-miterlimit:10;}
+	.st2{fill:#00A651;stroke:#00A651;stroke-miterlimit:10;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="589.4" width="582.2" x="6.6" y="126.3"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g id="Layer_2_1_">
+	<polyline class="st0" points="240,136.5 588,361.4 351.1,701.3 17.6,473.6 240,136.5 	"/>
+</g>
+<g id="Layer_1_1_">
+	<polygon class="st1" points="243.4,209.1 227.4,127.5 7.2,475.6 342.8,714.4 327.1,634.4 186.7,441.1 	"/>
+	<polygon class="st1" points="588,361.4 396.3,233.7 406.2,280.7 475.5,383.5 451.7,498.1 462.8,551.4 	"/>
+	<polygon class="st2" points="435,231.1 335.9,261.9 336,345.3 369.1,289.5 	"/>
+</g>
+</svg>

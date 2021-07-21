@@ -1,319 +1,99 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>PlumpOrange</title>
 
-<head>
-    <title>PlumpOrange</title>
-    <link rel="stylesheet" href="./resources/main.css">
-</head>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="scripts/index.js"></script>
 
-<body>
-    <div id="everything">
-            <div id="main" onscroll="updateBackground()">
-                    <div id="title">
-                        <h1 id="title-text">PlumpOrange</h1>
-                        <p>Freelance Developer</p>
-                    </div>
-                    <div id="content">
-                        <div id="featured">
-                            <h2>Featured Projects</h2>
-                            <div id="featured-table" class="section">
-                                <div class="featured-project">
-                                    <a href="https://discord.gg/R2vTmf5" target="_blank">
-                                        <h3>Nova Client</h3>
-                                    </a>
-                                    <br>
-                                    <p>A 1.7.10 FPS Minecraft client designed for the HCF community. Nova Client offers dozens of
-                                        built in mods, cosmetics, a custom launcher, and more!</p>
-                                </div>
-                                <div class="featured-project">
-                                    <a href="https://xPlumpOrange.github.io/plugins/sability.html">
-                                        <h3>sAbility</h3>
-                                    </a>
-                                    <br>
-                                    <p>A fully customizable ability plugin, with 17 abilities and a give gui system.</p>
-                                    <a href="https://xPlumpOrange.github.io/plugins/sability.html">
-                                        <p>Click to see more.</p>
-                                    </a>
-                                </div> 
-                                <div class="featured-project">
-                                    <a href="https://github.com/xPlumpOrange/ComboGrabber" target="_blank">
-                                        <h3>Combo Grabber</h3>
-                                    </a>
-                                    <br>
-                                    <p>A Java application that skims the internet for email and password combonations, allows dupe
-                                        removal, formatting, and saving!</p>
-                                </div>
-                            </div>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <img src="assets/logo.svg" class="logo">
+                <h3>PlumpOrange</h3>
+                <section id="menu-options">
+                    <button class="menu-button" onclick="location.href='#contact-section';">
+                        <p class="link">Socials</p>
+                    </button>
+                    <button class="menu-button" onclick="location.href='#projects-section';">
+                        <p class="link">Projects</p>
+                    </button>
+                    <button class="menu-button" onclick="location.href='#experience-section';">
+                        <p class="link">Experience</p>
+                    </button>
+                </section>
+            </header>
+            <div id="content">
+                <section id="experience-section">
+                    <h3>Experience</h3>
+
+                    <div class="experience-element-left">
+                        <div class="experience-icon" style="background: linear-gradient(45deg, rgba(228,154,67,1) 0%, rgba(255,162,0,1) 100%);">
+                            <img src="assets/java-icon.svg">
                         </div>
-                        <div id="experience" class="section">
-                            <h2>Experience</h2>
-                            <div id="experience-table">
-                                <div class="experience-part">
-                                    <img src="resources/logo-java.png">
-                                    <h3>Java</h3>
-                                    <br>
-                                    <p>I have been developing with Java for over 4 years</p>
-                                    <p>Discord.jda: 2 years</p>
-                                </div>
-                                <div class="experience-part">
-                                    <img src="resources/logo-javascript.png">
-                                    <h3>Javascript</h3>
-                                    <br>
-                                    <p>I have been developing with Javascript for 2 years</p>
-                                    <p>Discord.js: 2 years</p>
-                                </div>
-                                <div class="experience-part">
-                                    <img src="resources/logo-minecraft.png">
-                                    <h3>Minecraft</h3>
-                                    <br>
-                                    <p>I have been developing for Minecraft for 3 years</p>
-                                    <p>Server Side: 3 years</p>
-                                    <p>Client Side: 1 year</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="past-work" class="section">
-                            <h2>Past Work</h2>
-                            <div id="past-work-table">
-                                <div class="past-work-part">
-                                    <a href="https://discord.gg/R2vTmf5" target="_blank">
-                                        <h3>Nova Client</h3>
-                                    </a>
-                                    <br>
-                                    <p>A 1.7.10 FPS Minecraft client designed for the HCF community. Nova Client offers dozens of
-                                        built in mods, cosmetics, a custom launcher, and more!</p>
-                                </div>
-                                <div class="past-work-part">
-                                    <a href="https://github.com/xPlumpOrange/ComboGrabber" target="_blank">
-                                        <h3>Combo Grabber</h3>
-                                    </a>
-                                    <br>
-                                    <p>A java application that skims the internet for email and password combonations, allows dupe
-                                        removal, formatting, and saving!</p>
-                                </div>
-                            </div>
-                            <div id="past-work-table">
-                                <div class="past-work-part">
-                                    <h3>Personal Website</h3>
-                                    <br>
-                                    <p>This is my public website, I made with it HTML, CSS, and JS. Currently, you are on it!</p>
-                                </div>
-                                <div class="past-work-part">
-                                    <a href="https://github.com/xPlumpOrange/A.I.-Java-API" , target="_blank">
-                                        <h3>AI Java API</h3>
-                                    </a>
-                                    <br>
-                                    <p>This is my first open source API for Java. This API offers 2 neural netowork objects, a 3
-                                        layer and a 5 layer network. It uses the feed foward method and uses back propagation to
-                                        train. In all honesty, it's a little janky. With its hard to understand format and no
-                                        detailed documentation.</p>
-                                </div>
-                                <div class="past-work-part">
-                                    <a href="https://github.com/xPlumpOrange/Trvia-Game-Helper" target="_blank">
-                                        <h3>Trivia Game Helper</h3>
-                                    </a>
-                                    <br>
-                                    <p>This is an open source application that helps answer multiple choice questions. (Originally
-                                        made for HQTrivia) It uses HTML skimmers to grab Google and Yahoo search results, then uses
-                                        many layers of checking to find the most likely answer to the question. I even had the
-                                        audacity to have multi-language support.</p>
-                                </div>
-                                <div class="past-work-part">
-                                    <a href="https://irisclient.com" target="_blank">
-                                        <h3>Iris Client</h3>
-                                    </a>
-                                    <br>
-                                    <p>A 1.8.8 FPS and utility Minecraft client designed for almost every community. Iris Client offers dozens of
-                                        built in mods, custom features, cosmetics, a custom launcher, and more!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="plugins"></div>
-                        <div id="past-work" class="section">
-                            <h2>Plugins</h2>
-                            <div id="past-work-table">
-                                <div class="featured-project">
-                                    <a href="https://xPlumpOrange.github.io/plugins/sability.html">
-                                        <h3>sAbility</h3>
-                                    </a>
-                                    <br>
-                                    <p>A fully customizable ability plugin, with 17 abilities and a give gui system.</p>
-                                    <a href="https://xPlumpOrange.github.io/plugins/sability.html"">
-                                        <p>Click to see more.</p>
-                                    </a>
-                                </div> 
-                                <div class="featured-project">
-                                    <a href="https://xPlumpOrange.github.io/plugins/worldedittimelapse.html">
-                                        <h3>WorldeditTimelapse</h3>
-                                    </a>
-                                    <br>
-                                    <p>Worldedit timelapse system, with integrated per-chunk processing, and speed selections.</p>
-                                    <a href="https://xPlumpOrange.github.io/plugins/worldedittimelapse.html">
-                                        <p>Click to see more.</p>
-                                    </a>
-                                </div> 
-                            </div>
-                            <div id="past-work-table">
-                                <div class="featured-project">
-                                    <a href="https://xPlumpOrange.github.io/plugins/naranjahub.html">
-                                        <h3>NaranjaHub</h3>
-                                    </a>
-                                    <br>
-                                    <p>Fully customizable hub core made for 1.7+ with built in token system.</p>
-                                    <a href="https://xPlumpOrange.github.io/plugins/naranjahub.html">
-                                        <p>Click to see more.</p>
-                                    </a>
-                                </div> 
-                                <div class="featured-project">
-                                    <a href="https://xPlumpOrange.github.io/plugins/naranjahcf.html">
-                                        <h3>NaranjaHCF</h3>
-                                    </a>
-                                    <br>
-                                    <p>Customizable HCF core originally made for AdeptMC</p>
-                                    <a href="https://xPlumpOrange.github.io/plugins/naranjahcf.html">
-                                        <p>Click to see more.</p>
-                                    </a>
-                                </div> 
-                                <div class="featured-project">
-                                    <a href="https://xPlumpOrange.github.io/plugins/advancedip.html">
-                                        <h3>AdvancedIP</h3>
-                                    </a>
-                                    <br>
-                                    <p>IP logger and tracker with proxy detecting.</p>
-                                    <a href="https://xPlumpOrange.github.io/plugins/advancedip.html>
-                                        <p>Click to see more.</p>
-                                    </a>
-                                </div> 
-                            </div>
+                        <div class="experience-description">
+                            <h3>Java</h3>
+                            <p>4+ Years</p>
                         </div>
                     </div>
-                    <div id="footer">
-                        <p> PlumpOrange &copy; 2020</p>
-                        <div id="social">
-                            <a href="https://discord.gg/9NAQxTm" target="_blank"><img src="resources/logo-discord.png"></a>
-                            <a href="https://github.com/xPlumpOrange" target="_blank"><img src="resources/logo-github.png"></a>
-                            <a href="https://twitter.com/plump_orange" target="_blank"><img src="resources/logo-twitter.png"></a>
+                    <div class="experience-element-right">
+                        <div class="experience-icon" style="background: linear-gradient(45deg, rgba(67,224,228,1) 0%, rgba(0,116,255,1) 100%);">
+                            <img src="assets/bucket.svg" style="height: 65%; width: 65%; transform: translateY(28%);">
+                        </div>
+                        <div class="experience-description">
+                            <h3>Server Side</h3>
+                            <p>3+ Years</p>
                         </div>
                     </div>
+                    <div class="experience-element-left">
+                        <div class="experience-icon" style="background: linear-gradient(45deg, rgba(70,228,67,1) 0%, rgba(0,255,115,1) 100%);">
+                            <img src="assets/anvil.svg" style="transform: translateY(18%);">
+                        </div>
+                        <div class="experience-description">
+                            <h3>Client Side</h3>
+                            <p>2+ Years</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects-section">
+                    <h3>Projects</h3>
+
+                    <p style="font-style: italic; color: grey; margin: 300px 0px;">Under Construction</p>
+                </section>
+            </div>
+            <footer>
+                <section id="contact-section">
+                    <h3>Socials</h3>
+
+                    <div class="social-section">
+                        <div class="social" style="background: linear-gradient(135deg, rgba(32,33,36,1) 0%, rgb(14, 15, 17) 100%);" onclick="location.href='https://github.com/xPlumpOrange/';">
+                            <img src="assets/github.svg" style="transform: translate(1.25%, 13.5%);">
+                            <span class="social-tooltip">xPlumpOrange</span>
+                        </div>
+                        <div class="social" style="background: linear-gradient(135deg, rgba(88,101,242,1) 0%, rgba(28,42,195,1) 100%);">
+                            <img src="assets/discord.svg" style="transform: translate(0.5%, 12.5%);">
+                            <span class="social-tooltip">PlumpOrange#1604</span>
+                        </div>
+                        <div class="social" style="background: linear-gradient(135deg, rgba(29,161,242,1) 0%, rgba(0,95,153,1) 100%);" onclick="location.href='https://twitter.com/plump_orange/';">
+                            <img src="assets/twitter.svg" style="transform: translate(1%, 17.5%);">
+                            <span class="social-tooltip">@plump_orange</span>
+                        </div>
+                        <div class="social" style="background: linear-gradient(135deg, rgba(0,136,204,1) 0%, rgba(0,42,103,1) 100%);">
+                            <img src="assets/telegram.svg" style="transform: translate(-7%, 12.5%);">
+                            <span class="social-tooltip">@PlumpOrange</span>
+                        </div>
+                    </div>
+                </section>
+                <div class="bottom">
+                    <p>&COPY; PlumpOrange 2021</p>
+                    <img src="assets/logo.svg" class="logo">
                 </div>
-                <div id="menu">
-                    <h1>Menu</h1>
-                    <a href="#featured">
-                        <p onclick="toggleMenu()">Featured</p>
-                    </a>
-                    <a href="#experience">
-                        <p onclick="toggleMenu()">Experience</p>
-                    </a>
-                    <a href="#past-work">
-                        <p onclick="toggleMenu()">Past Work</p>
-                    </a>
-                    <a href="#plugins">
-                        <p onclick="toggleMenu()">Plugins</p>
-                    </a>
-                </div>
-                <div>
-                    <img id="menu-button" src="./resources/button.png" onclick="toggleMenu()">
-                </div>
-    </div>
-</body>
-<script>
-    function getCssValuePrefix() {
-        var rtrnVal = ''; //default to standard syntax
-        var prefixes = ['-o-', '-ms-', '-moz-', '-webkit-'];
-
-        // Create a temporary DOM object for testing
-        var dom = document.createElement('div');
-
-        for (var i = 0; i < prefixes.length; i++) {
-            // Attempt to set the style
-            dom.style.background = prefixes[i] + 'linear-gradient(#000000, #ffffff)';
-
-            // Detect if the style was successfully set
-            if (dom.style.background) {
-                rtrnVal = prefixes[i];
-            }
-        }
-
-        dom = null;
-        delete dom;
-
-        return rtrnVal;
-    }
-    offset = 0.0;
-    goUp = true;
-    //document.body.style.backgroundImage = getCssValuePrefix() + 'linear-gradient(rgb(9, 9, 15), rgb(15, 15, 24))';
-    function showTitle() {
-        document.getElementById("title").style.top = "0px";
-        document.getElementById("title").style.opacity = "1.0";
-        document.getElementById("title").getElementsByTagName('p').item(0).style.opacity = "0.75";
-        document.getElementById("title").getElementsByTagName('p').item(0).style.top = "0px";
-        document.getElementById("title-text").innerText = "";
-        document.getElementById("content").style.opacity = "1.0";
-        timeout = 0;
-        increase = 175;
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "P|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "Pl|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "Plu|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "Plum|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "Plump|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "PlumpO|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "PlumpOr|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "PlumpOra|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "PlumpOran|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "PlumpOrang|";
-        }, timeout += increase);
-        setTimeout(function () {
-            document.getElementById("title-text").innerText = "PlumpOrange";
-        }, timeout += increase);
-
-    }
-
-    function updateBackground() {
-        document.body.style.backgroundImage = getCssValuePrefix() +
-            `linear-gradient(rgb(${offset+9.0}, ${offset+9.0}, ${offset+15.0}), rgb(${offset+10.0}, ${offset+15.0}, ${offset+15.0}))`;
-        offset = window.pageYOffset / 100;
-    }
-
-    function setScroll() {
-        window.scrollTo(0, 0);
-    }
-
-    function toggleMenu() {
-        if (document.getElementById('menu').style.opacity == 0.0) {
-            document.getElementById('menu').style.opacity = 1.0;
-            document.getElementById('menu').style.width = '200px';
-            document.getElementById('menu').style.height = '300px';
-            document.getElementById('menu').style.right = '30px';
-        } else {
-            document.getElementById('menu').style.opacity = 0.0;
-            document.getElementById('menu').style.width = '190px';
-            document.getElementById('menu').style.height = '270px';
-            document.getElementById('menu').style.right = '-200px';
-        }
-    }
-
-    document.onscroll = updateBackground;
-    setScroll();
-    setTimeout(showTitle, 500);
-</script>
-
+            </footer>
+        </div>
+    </body>
 </html>
