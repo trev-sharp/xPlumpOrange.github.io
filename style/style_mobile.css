@@ -1,0 +1,305 @@
+html {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+
+    background: linear-gradient(135deg, rgba(32,33,36,1) 10%, rgb(11, 12, 14) 100%);
+    color: white;
+
+    font-size: 20px;
+
+    z-index: 5;
+}
+
+img {
+    z-index: 6;
+}
+
+
+/*
+ * Base Formatting
+ */
+div#content {
+    padding: 10px 10%;
+    padding-top: 50px;
+    margin: 0px;
+
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 90%;
+    height: 175px;
+    
+    background: #202124;
+    border-bottom: 1px solid #686970;
+
+    line-height: 175px;
+    overflow: hidden;
+
+    padding: 0px 5%;
+    z-index: 10;
+}
+
+footer {
+    width: auto;
+    margin: 0%;
+
+    background: #303134;
+    overflow: hidden;
+}
+
+/*
+ * Header Element Formatting
+ */
+ header img.logo {
+    height: 100%;
+
+    float: left;
+    margin-right: 2.5%;
+ }
+
+ header h3 {
+    font-weight: 500;
+    font-size: 40px;
+
+    float: left;
+    text-align: center;
+    transform: translateY(-40px);
+ }
+
+ header p.link {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+
+    text-decoration: none;
+ }
+
+ header button.menu-button {
+    float: right;
+
+    padding: 0px 1.5%;
+    cursor: pointer;
+
+    background: #202124;
+    color: #a4a8ad;
+    border-radius: 2px;
+
+    transition-duration: 100ms;
+    text-decoration: none;
+    border: none;
+    height: 175px;
+ }
+
+ header button.menu-button:hover {
+    background: #28282c;
+
+    color: white;
+ }
+
+
+ /*
+  * Content Element Formatting
+  */
+div#content section {
+    padding-top: 8%;
+    padding-bottom: 5%;
+    margin: 5% 0px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #686970;
+    border-radius: 2px;
+}
+
+div#content h3 {
+    font-weight: 500;
+    font-size: 45px;
+
+    margin-bottom: 2%;
+}
+
+/*
+ * Experience Element Formatting
+ */
+div.experience-element-left, div.experience-element-right {
+    width: 60%;
+    height: 175px;
+    margin: 1% 20%;
+    padding: 2% 0%;
+
+    display: inline-block;
+    border-bottom: 1px dotted rgba(104, 105, 112, 0.459);
+}
+
+div.experience-icon img {
+    width: 75%;
+    height: 75%;
+    transform: translateY(15%);
+
+    margin: 0%;
+    text-align: center;
+}
+
+div.experience-description p {
+    margin: 10px;
+    padding: 5px;
+    color: #a4a8ad;
+    font-style: italic;
+}
+
+div.experience-element-left h3, div.experience-element-right h3 {
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+div.experience-element-left div.experience-icon {
+    height: 100%;
+    width: 175px;
+    border-radius: 50%;
+
+    margin: 0%;
+    margin-right: 2.5%;
+    float: left;
+
+    box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
+}
+
+div.experience-element-left div.experience-description {
+    height:  100%;
+
+    float: left;
+}
+
+div.experience-element-right div.experience-icon {
+    height: 100%;
+    width: 175px;
+    border-radius: 50%;
+
+    margin: 0%;
+    margin-left: 2.5%;
+    float: right;
+
+    box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
+}
+
+div.experience-element-right div.experience-description {
+    height:  100%;
+
+    float: right;
+}
+
+div.experience-description h3 {
+    font-size: 30px;
+}
+
+ /*
+  * Footer Element Formatting
+  */
+footer section {
+    padding-top: 3%;
+    padding-bottom: 50px;
+    margin: 25px 0px;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+footer h3 {
+    font-weight: 500;
+    font-size: 45px;
+
+    margin-bottom: 1%;
+}
+
+footer div.bottom {
+    margin: 1% 10%;
+    margin-top: 3%;
+    height: 100px;
+    line-height: 100px;
+
+    border-top: 1px solid #686970;
+}
+
+footer p {
+    color: #a4a8ad;
+    float: right;
+
+    font-size: 25px;
+    line-height: 100px;
+}
+
+footer img.logo {
+    height: 150%;
+
+    float: left;
+    transform: translateY(-5%);
+}
+
+/*
+ * Socials Section Formatting
+ */
+
+div.social-section {
+    width: 80%;
+    height: 150px;
+    margin: 3% 10%;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+div.social {
+    height: 100%;
+    width: 150px;
+
+    border-radius: 50%;
+    background: black;
+    margin: 25px 75px;
+
+    display: inline-block;
+    box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
+    cursor: pointer;
+}
+
+div.social img {
+    height: 112.5px;
+    width: 112.5px;
+    margin: 0px auto;
+    transform: translateY(12.5%);
+}
+
+div.social .social-tooltip {
+    opacity: 0.0;
+    height: 55px;
+    width: 0px;
+    font-size: 0px;
+    background: linear-gradient(135deg, rgba(32,33,36,1) 10%, rgb(11, 12, 14) 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9;
+
+    transition-duration: 100ms;
+    transform: translate(-65%, -85%);
+  }
+  
+  div.social:hover .social-tooltip {
+    opacity: 1.0;
+    width: 325px;
+    font-size: 30px;
+    box-shadow: 5px 10px 5px 3px rgba(0, 0, 0, 0.137);
+  }
