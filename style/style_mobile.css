@@ -117,9 +117,10 @@ div#content section {
 
     text-align: center;
 
-    border-bottom: 1px solid #686970;
     border-radius: 2px;
 }
+
+
 
 div#content h3 {
     font-weight: 500;
@@ -303,3 +304,120 @@ div.social .social-tooltip {
     font-size: 30px;
     box-shadow: 5px 10px 5px 3px rgba(0, 0, 0, 0.137);
   }
+
+  
+/*
+ * Socials Section Formatting
+ */
+
+div.social-section {
+    width: 80%;
+    height: 100px;
+    margin: 1% 10%;
+    display: inline-block;
+}
+
+div.social {
+    height: 100%;
+    width: 100px;
+
+    border-radius: 50%;
+    background: black;
+    margin: 15px 75px;
+
+    display: inline-block;
+    box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
+    cursor: pointer;
+}
+
+div.social img {
+    height: 75px;
+    width: 75px;
+    margin: 0px auto;
+    transform: translateY(12.5%);
+}
+
+div.social .social-tooltip {
+    opacity: 0.0;
+    height: 35px;
+    width: 0px;
+    font-size: 0px;
+    background: linear-gradient(135deg, rgba(32,33,36,1) 10%, rgb(11, 12, 14) 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9;
+
+    transition-duration: 100ms;
+    transform: translate(-65%, -85%);
+}
+  
+div.social:hover .social-tooltip {
+    opacity: 1.0;
+    width: 250px;
+    font-size: 23px;
+    box-shadow: 5px 10px 5px 3px rgba(0, 0, 0, 0.137);
+}
+
+/*
+ * Projects Element Formatting
+ */
+
+div.project-element-left, div.project-element-right {
+    width: 70%;
+    max-width: 700px;
+    min-height: 300px;
+    padding: 0 10px;
+    float: left;
+
+    border-radius: 10px;
+    box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
+    background: #262729;
+    background: linear-gradient(135deg, #262729 10%, rgb(40, 40, 46) 100%);
+
+    margin: 25px 0px;
+
+    transition-duration: 200ms;
+    opacity: 0;
+    transform: translate(200px, 0px);
+}
+
+div.project-element-right {
+    float: right;
+    transform: translate(-200px, 0px);
+}
+
+div.project-element-left p, div.project-element-right p {
+    color:rgb(201, 195, 195);
+}
+
+div.project-link-section {
+    height: 50px;
+    margin: 10px 10px;
+    padding-bottom: 15px;
+    border-top: 1px solid #686970;
+}
+
+div.project-link {
+    height: 100%;
+    width: 50px;
+
+    border-radius: 50%;
+    background: black;
+    margin: 3% 5px;
+
+    display: inline-block;
+    box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.137);
+    cursor: pointer;
+}
+
+div.project-link img {
+    height: 40px;
+    width: 40px;
+    margin: 0px auto;
+    transform: translateY(12.5%);
+}

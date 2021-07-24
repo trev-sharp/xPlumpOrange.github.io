@@ -27,7 +27,7 @@ img {
  * Base Formatting
  */
 div#content {
-    padding: 10px 10%;
+    padding: 10px 15%;
     padding-top: 50px;
     margin: 0px;
 
@@ -112,11 +112,10 @@ footer {
 div#content section {
     padding-top: 6%;
     padding-bottom: 5%;
-    margin: 5% 0px;
+    margin: 5% 15%;
 
     text-align: center;
 
-    border-bottom: 1px solid #686970;
     border-radius: 2px;
 }
 
@@ -131,9 +130,9 @@ div#content h3 {
  * Experience Element Formatting
  */
 div.experience-element-left, div.experience-element-right {
-    width: 60%;
+    width: 50%;
     height: 125px;
-    margin: 1% 20%;
+    margin: 1% 25%;
     padding: 2% 0%;
 
     display: inline-block;
@@ -208,7 +207,9 @@ div.experience-description h3 {
 footer section {
     padding-top: 3%;
     padding-bottom: 50px;
-    margin: 25px 0px;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 25px 5%;
     margin-bottom: 10px;
 
     text-align: center;
@@ -290,11 +291,69 @@ div.social .social-tooltip {
 
     transition-duration: 100ms;
     transform: translate(-65%, -85%);
-  }
+}
   
-  div.social:hover .social-tooltip {
+div.social:hover .social-tooltip {
     opacity: 1.0;
     width: 250px;
     font-size: 23px;
     box-shadow: 5px 10px 5px 3px rgba(0, 0, 0, 0.137);
-  }
+}
+
+/*
+ * Projects Element Formatting
+ */
+
+div.project-element-left, div.project-element-right {
+    width: 70%;
+    max-width: 700px;
+    min-height: 300px;
+    padding: 0 10px;
+    float: left;
+
+    border-radius: 10px;
+    box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
+    background: #262729;
+    background: linear-gradient(135deg, #262729 10%, rgb(40, 40, 46) 100%);
+
+    margin: 25px 0px;
+
+    transition-duration: 200ms;
+    opacity: 0;
+    transform: translate(200px, 0px);
+}
+
+div.project-element-right {
+    float: right;
+    transform: translate(-200px, 0px);
+}
+
+div.project-element-left p, div.project-element-right p {
+    color:rgb(201, 195, 195);
+}
+
+div.project-link-section {
+    height: 50px;
+    margin: 10px 10px;
+    border-top: 1px solid #686970;
+}
+
+div.project-link {
+    height: 100%;
+    width: 50px;
+
+    border-radius: 50%;
+    background: black;
+    margin: 3% 5px;
+
+    display: inline-block;
+    box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.137);
+    cursor: pointer;
+}
+
+div.project-link img {
+    height: 40px;
+    width: 40px;
+    margin: 0px auto;
+    transform: translateY(12.5%);
+}

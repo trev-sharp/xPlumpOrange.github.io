@@ -22,3 +22,48 @@ function setupCSS() {
 }
 
 setupCSS();
+
+
+/*
+ * Checks if element is currently visible in the veiwport
+ */
+function isElementInViewport (el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+  
+    while(el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+  
+    return (
+      top >= window.pageYOffset &&
+      left >= window.pageXOffset &&
+      (top + height) <= (window.pageYOffset + window.innerHeight) &&
+      (left + width) <= (window.pageXOffset + window.innerWidth)
+    );
+}
+
+document.addEventListener('scroll', function(e) {
+    var elements = document.getElementsByClassName("project-element-right");
+    for (var i = 0; i < elements.length; i++) {
+        var projElem = elements.item(i);
+        if (isElementInViewport(projElem) && projElem.style.opacity != 1.0) {
+            projElem.style["transition-duration"] = "1500ms";
+            projElem.style.opacity = 1.0;
+            projElem.style["transform"] = "translate(0px, 0px)";
+        }
+    }
+    elements = document.getElementsByClassName("project-element-left");
+    for (var i = 0; i < elements.length; i++) {
+        var projElem = elements.item(i);
+        if (isElementInViewport(projElem) && projElem.style.opacity != 1.0) {
+            projElem.style["transition-duration"] = "1500ms";
+            projElem.style.opacity = 1.0;
+            projElem.style["transform"] = "translate(0px, 0px)";
+        }
+    }
+});
