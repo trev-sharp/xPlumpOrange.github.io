@@ -2,19 +2,15 @@ html {
     font-family: 'Noto Sans', sans-serif;
     padding: 0px;
     margin: 0px;
-
     scroll-behavior: smooth;
 }
 
 body {
     padding: 0px;
     margin: 0px;
-
-    background: linear-gradient(135deg, rgba(32,33,36,1) 10%, rgb(11, 12, 14) 100%);
+    background: linear-gradient(135deg, rgba(32, 33, 36, 1) 10%, rgb(11, 12, 14) 100%);
     color: white;
-
     font-size: 20px;
-
     z-index: 5;
 }
 
@@ -26,11 +22,11 @@ img {
 /*
  * Base Formatting
  */
+
 div#content {
     padding: 10px 15%;
     padding-top: 50px;
     margin: 0px;
-
     overflow: hidden;
 }
 
@@ -38,13 +34,10 @@ header {
     position: fixed;
     width: 90%;
     height: 100px;
-    
-    background: #202124;
+    background: #202124fd;
     border-bottom: 1px solid #686970;
-
     line-height: 100px;
     overflow: hidden;
-
     padding: 0px 5%;
     z-index: 10;
 }
@@ -52,89 +45,83 @@ header {
 footer {
     width: auto;
     margin: 0%;
-
     background: #303134;
     overflow: hidden;
 }
 
+
 /*
  * Header Element Formatting
  */
- header img.logo {
-    height: 100%;
 
+header img.logo {
+    height: 100%;
     float: left;
     margin-right: 2.5%;
- }
+}
 
- header h3 {
+header h3 {
     font-weight: 500;
     font-size: 30px;
-
     float: left;
     text-align: center;
     transform: translateY(-30px);
- }
+}
 
- header p.link {
+header p.link {
     font-size: 18px;
     font-weight: 600;
-
     text-decoration: none;
- }
+}
 
- header button.menu-button {
+header button.menu-button {
     float: right;
-
     padding: 0px 1.5%;
     cursor: pointer;
-
     background: #202124;
     color: #a4a8ad;
     border-radius: 2px;
-
     transition-duration: 100ms;
     text-decoration: none;
     border: none;
     height: 100px;
- }
+}
 
- header button.menu-button:hover {
+header button.menu-button:hover {
     background: #28282c;
-
     color: white;
- }
+}
 
 
- /*
+/*
   * Content Element Formatting
   */
+
 div#content section {
     padding-top: 6%;
     padding-bottom: 5%;
     margin: 5% 15%;
-
     text-align: center;
-
     border-radius: 2px;
 }
 
 div#content h3 {
     font-weight: 500;
     font-size: 35px;
-
     margin-bottom: 2%;
 }
+
 
 /*
  * Experience Element Formatting
  */
-div.experience-element-left, div.experience-element-right {
+
+div.experience-element-left,
+div.experience-element-right {
     width: 50%;
     height: 125px;
     margin: 1% 25%;
     padding: 2% 0%;
-
     display: inline-block;
     border-bottom: 1px dotted rgba(104, 105, 112, 0.459);
 }
@@ -143,7 +130,6 @@ div.experience-icon img {
     width: 75%;
     height: 75%;
     transform: translateY(15%);
-
     margin: 0%;
     text-align: center;
 }
@@ -155,7 +141,8 @@ div.experience-description p {
     font-style: italic;
 }
 
-div.experience-element-left h3, div.experience-element-right h3 {
+div.experience-element-left h3,
+div.experience-element-right h3 {
     line-height: 20px;
     margin-bottom: 20px;
     padding: 0px;
@@ -165,17 +152,14 @@ div.experience-element-left div.experience-icon {
     height: 100%;
     width: 125px;
     border-radius: 50%;
-
     margin: 0%;
     margin-right: 2.5%;
     float: left;
-
     box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
 }
 
 div.experience-element-left div.experience-description {
-    height:  100%;
-
+    height: 100%;
     float: left;
 }
 
@@ -183,17 +167,14 @@ div.experience-element-right div.experience-icon {
     height: 100%;
     width: 125px;
     border-radius: 50%;
-
     margin: 0%;
     margin-left: 2.5%;
     float: right;
-
     box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
 }
 
 div.experience-element-right div.experience-description {
-    height:  100%;
-
+    height: 100%;
     float: right;
 }
 
@@ -201,9 +182,11 @@ div.experience-description h3 {
     font-size: 20px;
 }
 
- /*
+
+/*
   * Footer Element Formatting
   */
+
 footer section {
     padding-top: 3%;
     padding-bottom: 50px;
@@ -211,16 +194,13 @@ footer section {
     padding-right: 25%;
     margin: 25px 5%;
     margin-bottom: 10px;
-
     text-align: center;
-
     border-bottom: 1px solid #686970;
 }
 
 footer h3 {
     font-weight: 500;
     font-size: 30px;
-
     margin-bottom: 2%;
 }
 
@@ -232,16 +212,15 @@ footer div.bottom {
 footer p {
     color: #a4a8ad;
     float: right;
-
     font-size: 15px;
 }
 
 footer img.logo {
     height: 150%;
-
     float: left;
     transform: translateY(-12.5%);
 }
+
 
 /*
  * Socials Section Formatting
@@ -257,11 +236,9 @@ div.social-section {
 div.social {
     height: 100%;
     width: 100px;
-
     border-radius: 50%;
     background: black;
     margin: 15px 75px;
-
     display: inline-block;
     box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
     cursor: pointer;
@@ -279,20 +256,18 @@ div.social .social-tooltip {
     height: 35px;
     width: 0px;
     font-size: 0px;
-    background: linear-gradient(135deg, rgba(32,33,36,1) 10%, rgb(11, 12, 14) 100%);
+    background: linear-gradient(135deg, rgba(32, 33, 36, 1) 10%, rgb(11, 12, 14) 100%);
     color: #fff;
     text-align: center;
     border-radius: 5px;
     padding: 5px 0;
-  
     /* Position the tooltip */
     position: absolute;
     z-index: 9;
-
     transition-duration: 100ms;
     transform: translate(-65%, -85%);
 }
-  
+
 div.social:hover .social-tooltip {
     opacity: 1.0;
     width: 250px;
@@ -300,24 +275,23 @@ div.social:hover .social-tooltip {
     box-shadow: 5px 10px 5px 3px rgba(0, 0, 0, 0.137);
 }
 
+
 /*
  * Projects Element Formatting
  */
 
-div.project-element-left, div.project-element-right {
+div.project-element-left,
+div.project-element-right {
     width: 70%;
     max-width: 700px;
     min-height: 300px;
     padding: 0 10px;
     float: left;
-
     border-radius: 10px;
     box-shadow: 5px 10px 3px 3px rgba(0, 0, 0, 0.137);
     background: #262729;
     background: linear-gradient(135deg, #262729 10%, rgb(40, 40, 46) 100%);
-
     margin: 25px 0px;
-
     transition-duration: 200ms;
     opacity: 0;
     transform: translate(200px, 0px);
@@ -328,8 +302,9 @@ div.project-element-right {
     transform: translate(-200px, 0px);
 }
 
-div.project-element-left p, div.project-element-right p {
-    color:rgb(201, 195, 195);
+div.project-element-left p,
+div.project-element-right p {
+    color: rgb(201, 195, 195);
 }
 
 div.project-link-section {
@@ -341,11 +316,9 @@ div.project-link-section {
 div.project-link {
     height: 100%;
     width: 50px;
-
     border-radius: 50%;
     background: black;
     margin: 3% 5px;
-
     display: inline-block;
     box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.137);
     cursor: pointer;
